@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
+import "./components/Sidebar.css"
 import Navbar from "./components/Navbar";
 import Dashboard from "./components/Dashboard";
 
