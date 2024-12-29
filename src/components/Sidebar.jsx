@@ -9,8 +9,8 @@ const Sidebar = () => {
       <ul className="nav flex-column">
         {/* Dashboard Link */}
         <li className="nav-item mb-2">
-          <Link to="/" className="nav-link text-light">
-            <i className="bi bi-house"></i> Dashboard
+          <Link to="/Planned" className="nav-link text-light">
+            <i className="bi bi-house"></i> Planned
           </Link>
         </li>
         

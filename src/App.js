@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Dailyplan from "./components/Dailyplan";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import PlannedPage from "./components/Planned";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <main className="content">
                     <Routes>
                         <Route path="/dailyplan" element={<Dailyplan />} />
+                        <Route path="/planned" element={<PlannedPage/>}/>
                     </Routes>
                 </main>
             </div>

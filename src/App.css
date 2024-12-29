@@ -3,11 +3,14 @@
   }
   
   input[type="radio"]:checked + div {
-    background-color: #007bff;
+    background-color: #8dcfec;
     color: white;
     border-radius: 50%;
   }
   
   textarea {
     resize: none;
+  }
+  .background{
+    color: '#C0DBE6'
   }

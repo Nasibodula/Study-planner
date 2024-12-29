@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg   fixed-top w-100  bg-dark" style={{ marginLeft: "21%"}}>
+    <nav className="navbar navbar-expand-lg   fixed-top w-100" style={{ marginLeft: "21%", background:"#2b404a"}}>
       <form className="form-inline w-79 d-flex flex-row ">
         <div className="d-flex w-75">
           <input
