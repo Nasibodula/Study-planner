@@ -1,3 +1,13 @@
-body{
-    background:#EAEFF2;
-}
+.border-bottom {
+    border-bottom: 1px solid #ccc !important;
+  }
+  
+  input[type="radio"]:checked + div {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  textarea {
+    resize: none;
+  }
