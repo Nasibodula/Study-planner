@@ -84,7 +84,7 @@ function StudyPlanner() {
     setTasks(tasks.filter((_, taskIndex) => taskIndex !== index));
   };
   return (
-    <div className="container " style={{ padding: '20px', width: '76%', marginLeft: '23%', marginTop: '4%' }}>
+    <div className="container" style={{ padding: '20px'}}>
       <div className='row'>
         <div className="col-6">
           <h2 className="mb-4">DAILY PLAN</h2>
@@ -136,8 +136,8 @@ function StudyPlanner() {
           onClick={handleSavePlan}
           className="btn btn-primary"
           style={{
-            backgroundColor: "#6A9EB4",
-            borderColor: "#6A9EB4",
+            backgroundColor: "#2d4621",
+            borderColor: "#ABCF8F",
             color: "#FFF",
           }}
         >
@@ -166,7 +166,7 @@ function StudyPlanner() {
               style={{
                 width: "30px",
                 height: "30px",
-                backgroundColor: highlightedDay === index ? "#6A9EB4" : "transparent",
+                backgroundColor: highlightedDay === index ?"#355218" : "transparent",
                 color: highlightedDay === index ? "#FFF" : "#000",
                 cursor: "pointer",
               }}
@@ -191,8 +191,8 @@ function StudyPlanner() {
               type="button"
               onClick={handleAddTask}
               style={{
-                backgroundColor: "#6A9EB4",
-                borderColor: "#6A9EB4",
+                backgroundColor: "#355218",
+                borderColor: "#ABCF8F",
                 color: "#FFF",
               }}
             >
@@ -205,12 +205,12 @@ function StudyPlanner() {
                 <li
                   key={index}
                   className="list-group-item d-flex align-items-center mb-2"
-                  style={{height:"30px",backgroundColor: ['#C0DBE6','#6A9EB4', '#46A3CC', '#0EBFE1', '#0098B4'][index % 5] }}
+                  style={{height:"30px",backgroundColor: ['#ABCF8F','#355218', '#d7f1c4','#55833e', '#BDD4A8'][index % 5] }}
                 >
                   <span className="bullet d-flex align-items-center mb-2" 
                     style={{
                       fontSize: "2rem",
-                      color: ['#6A9EB4', '#0EBFE1', '#0098B4','#46A3CC','#C0DBE6'][index % 5],
+                      color: ['#55833e', '#BDD4A8','#355218','#ABCF8F','#d7f1c4'][index % 5],
                       marginRight: '5px' 
                     }}>●</span> {task}
                   <button
@@ -251,7 +251,7 @@ function StudyPlanner() {
               value={notes.join('\n')}
               onChange={handleNotesChange}
               style={{
-                backgroundColor: '#C0DBE6',
+                backgroundColor: '#ABCF8F',
                 border: 'none',
                 borderRadius: '10px',
                 padding: '20px',

@@ -1,4 +1,4 @@
-.border-bottom {
+/* .border-bottom {
     border-bottom: 1px solid #ccc !important;
   }
   
@@ -14,3 +14,86 @@
   .background{
     color: '#C0DBE6'
   }
+  .wrapper {
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    height: 100vh; } */
+    :root{
+      --color-default:#1C2B15;
+      --color-second:#ABCF8F;
+      --color-white:#fff;
+      --color-body:#e4e9f7;
+      --color-light:#e0e0e0;
+      --color-1:#2d4621;
+      --color-2:#d7f1c4;
+      --color-2:#55833e;
+    }
+
+    .home-section .text{
+      display: inline-block;
+      color:var(--color-default);
+      font-size: 25px;
+      font-weight: 500;
+      margin: 18px;
+    }
+
+    .content {
+      margin-left: 4.86rem; /* Default margin */
+      transition: margin-left 0.5s ease; /* Smooth transition */
+      margin-top: 3.5rem;
+      overflow-x: hidden;
+    }
+    .navbar{
+      margin-left: 4.86rem;
+      transition: all .5s ease;
+    }
+    .sidebar.open ~ .content,.sidebar.open ~ .navbar {
+      margin-left: 15.64rem; /* Shift content when sidebar is open */
+    }
+
+    .navbar .profile_details{
+      display: flex;
+      flex-direction: row; 
+        position:relative;
+        height: 60px;
+        width: 15rem;
+        right: 0px;
+        top:0px;
+        padding:10px 14px;
+        overflow: hidden;
+        /* transition: all .5s ease; */
+    }
+
+    .navbar .profile_details img{
+      height: 45px;
+      width: 45px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .navbar .profile_details .profile_content{
+
+    }
+    /* .navbar .profile_content{
+      display: flex;
+      flex-direction: column;
+    } */
+    .navbar .profile_details .profile_content .name,
+.navbar .profile_details .profile_content .designation{
+  font-size: 15px;
+  font-weight: 400;
+  color:var(--color-default);
+  white-space: nowrap;
+}
+
+.navbar .profile_details .profile_content .designation{
+  font-size: 12px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Add a custom focus ring */
+  border-color: #80bdff; /* Optionally change the border color */
+}
